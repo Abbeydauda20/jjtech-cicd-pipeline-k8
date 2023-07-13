@@ -3,12 +3,12 @@
 terraform {
   backend "s3" {
     # Replace this with your bucket name!
-    bucket         = "cf-templates-1cdrz7juswjw8-us-east-1"
-    key            = "jjtech/terraform.tfstate"
+    bucket         = "myseedbkt"
+    key            = "seedbkt"
     region         = "us-east-1"
 
     # Replace this with your DynamoDB table name!
-    dynamodb_table = "seed-DynamoDb"
+    dynamodb_table = "k8s-dynamodb"
   }
   
   required_providers {
